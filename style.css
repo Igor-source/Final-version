@@ -39,7 +39,7 @@ span{
 }
 .menu__items{
     text-decoration: none;
-    margin-right: 35px;
+    margin-right: 25px;
     font-family: Roboto, sans-serif;
     font-size: 15px;
     line-height: 18px;
@@ -74,15 +74,33 @@ nav a:nth-child(5){
     line-height: 16px;
     color: #FFFFFF;
     margin-left: 10px;
-    opacity: 1;
     outline: none;
+    position: relative;
+    z-index: 1;
 }
-.button_logo:hover{
-    outline: none;
-    width: 140px;
-    height: 40px;
-    background: grey;
-    opacity: 0.5;
+.button_logo:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: block;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    background-color: greenyellow;
+    -webkit-box-shadow: inset 0px -2px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px -2px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px -2px 5px 0px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+
+}.button_logo:hover{
+    background: transparent;
+    color: gray;
+}
+.button_logo:hover:after{
+    height: 100%;
+    border: 2px solid green;
+    border-radius: 100px;
 }
 label{
     display: block;
