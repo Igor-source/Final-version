@@ -306,7 +306,7 @@ footer{
 .advertising{
     margin: 10px auto 0px auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
     grid-template-rows: minmax(212px, auto) 50px;
 }
 .left_block p:nth-child(1){
@@ -326,7 +326,7 @@ a{
     text-decoration: none;
 }
 ul{
-    margin: 35px 0 0 50px;
+    margin: 32px 29px 0 0px;
 }
 ul a:not(h2), .footer_text{
     font-family: Roboto;
@@ -345,9 +345,9 @@ ul h2 {
     margin: 0 10% 0 10%;
 }
 .left_block a{
-    width: 36px;
+    width: 32px;
     height: 36px;
-    margin: 0 10px;
+    margin: 0 5px;
     text-align: center;
     border-radius: 50%;
     display: inline-block;
