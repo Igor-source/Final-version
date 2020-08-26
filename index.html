@@ -9,51 +9,65 @@
     <title>Contact us</title>
 </head>
 <body>
-    <header class="container">
-        <div class="logo items">
-            <p class="logo_text">GOGE<span > AFRICA</span></p>
-            <img src="./uploads/HW19images/Logo_image.png" class="logo_image">
-        </div>
-        <div class="menu items">
-            <nav class="line">
-                <a href="#" class="menu__items ">Home</a>
-                <a href="#" class="menu__items ">Courses</a>
-                <a href="#" class="menu__items ">Blog</a>
-                <a href="#" class="menu__items ">About us</a>
-                <a href="#" class="menu__items ">Contact us</a>
-                <img src="./uploads/HW19images/truck.png" class="">
-            </nav>
-            <button class="button_logo ">Be A Contributor</button>
-            <button class="button_logo ">Log in</button>
+    <header >
+        <div class="container header">
+            <div class="logo">
+                <p class="logo_text">
+                    <a href="$">GOGE<span > AFRICA</span></a>
+                <a href="#">
+                    <img src="./uploads/HW19images/Logo_image.png" class="logo_image">
+                </a></p>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="header__menu container">
+                <div class="items">
+                    <nav class="line">
+                        <a href="#" class="menu__Link ">Home</a>
+                        <a href="#" class="menu__Link ">Courses</a>
+                        <a href="#" class="menu__Link ">Blog</a>
+                        <a href="#" class="menu__Link ">About us</a>
+                        <a href="#" class="menu__Link ">Contact us</a>
+                        <img src="./uploads/HW19images/truck.png">
+                    </nav>
+                    <button class="button_logo ">Be A Contributor</button>
+                    <button class="button_logo ">Log in</button>
+                </div>
+            </div>              
         </div>
     </header>
-    <main class="container">
-        <div class="main_title">
-            <h1>24Hrs On Deck Customer Support </h1>
-            <p>We are at your call. We serve you always.</p>
+
+
+    <main >
+        <div class="container">
+            <div class="main_title">
+                <h1>24Hrs On Deck Customer Support </h1>
+                <p>We are at your call. We serve you always.</p>
+            </div>
+            <form >
+                <h1>Let’s Talk!</h1>
+                <p>We do normally get back within 48hrs. Please leave a message.</p>
+                <label>
+                    <input type="text" name="profile" placeholder="Full name" >
+                </label>
+                <label>
+                    <input type="text" name="profile" placeholder="Country / Region">
+                </label>
+                <label>
+                    <input type="text" name="profile" placeholder="Street address">
+                </label>
+                <label>
+                    <input type="text" name="profile" placeholder="City">
+                </label>
+                <label class="your_message">
+                    <input type="text" name="profile" placeholder="Your message">
+                </label>
+                <input type="submit" value="Send message" class="button">
+            </form>
         </div>
-        <form >
-            <h1>Let’s Talk!</h1>
-            <p>We do normally get back within 48hrs. Please leave a message.</p>
-            <label>
-                <input type="text" name="profile" placeholder="Full name" >
-            </label>
-            <label>
-                <input type="text" name="profile" placeholder="Country / Region">
-            </label>
-            <label>
-                <input type="text" name="profile" placeholder="Street address">
-            </label>
-            <label>
-                <input type="text" name="profile" placeholder="City">
-            </label>
-            <label class="your_message">
-                <input type="text" name="profile" placeholder="Your message">
-            </label>
-            <input type="submit" value="Send message" class="button">
-        </form>
     </main>
-    <footer class="container ">
+    <footer>
         <div class="advertising">
             <div class="left_block">
                 <p class="logo_text">GOGE<span > AFRICA</span>
@@ -85,5 +99,10 @@
             </div>
         </div>
     </footer>
+
+
+
+    <script src="./JQuery/JQuery.js"></script>
+    <script src="./main1.js"></script>
 </body>
 </html>
